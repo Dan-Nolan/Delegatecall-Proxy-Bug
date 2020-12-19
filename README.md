@@ -1,6 +1,6 @@
 # Delegatecall Proxy Bug
 
-This repository focused on the vulnerability discovered by [Trail of Bits](https://blog.trailofbits.com/2020/12/16/breaking-aave-upgradeability/) on December 3rd in the AAVE V2 Contracts. We'll focus on this vulnerability by writing a contract that would have exploited it!
+This repository focused on the vulnerability discovered by [Trail of Bits](https://blog.trailofbits.com/2020/12/16/breaking-aave-upgradeability/) on December 4th in the AAVE V2 Contracts. We'll focus on this vulnerability by writing a contract that would have exploited it!
 
 To successfully pull off the attack we'll fork the mainnet at a block before AAVE initialized their contracts [here](https://etherscan.io/tx/0x98089120cd9b1a83a8c5233f6773ff9c12b7451a12532b7ef103d0a85419aa4e) and [here](https://etherscan.io/tx/0x5e7b4c263d3f764583bd9fbd39bd7276295f033bf42bbcd97bc0e4d8f7d22ed2).
 
