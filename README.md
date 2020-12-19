@@ -21,7 +21,7 @@ Once you've successfully downloaded the dependencies, we'll need to setup our re
 
 In order to fork mainnet, we'll be pointing this repository at an [Alchemy API](https://alchemyapi.io/) endpoint. To do this, you'll need to sign up for Alchemy, create a mainnet project and get your HTTP endpoint.
 
-Once you've done this we'll use [dotenv](https://www.npmjs.com/package/dotenv) to store the endpoint in a local `.env` file that won't accidentally get committed! Since this package is already in your dependencies all you'll need to do is create a new `.env` file and add the following entry into it:
+Once you've done this we'll use [dotenv](https://www.npmjs.com/package/dotenv) to store the endpoint in a local `.env` file that won't accidentally get committed! Since this package is already in your dependencies all you'll need to do is create a new `.env` file at the top level of the repository and add the following entry into it:
 
 ```
 FORKING_URL=https://eth-mainnet.alchemyapi.io/v2/<YOUR_API_KEY>
