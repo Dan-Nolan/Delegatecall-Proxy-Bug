@@ -1,11 +1,11 @@
 const { assert } = require("chai");
-const abi = require('./abi.json');
+const lendingPoolAddress = "0x987115C38Fd9Fd2aA2c6F1718451D167c13a3186";
 
 describe("Pool", function () {
     let contract;
     let pool;
     before(async () => {
-        pool = await ethers.getContractAt(abi, "0x987115C38Fd9Fd2aA2c6F1718451D167c13a3186");
+        pool = await ethers.getContractAt("ILendingPool", lendingPoolAddress);
 
         const Destructor = await ethers.getContractFactory("Destructor");
         let exploit = await Destructor.deploy();
